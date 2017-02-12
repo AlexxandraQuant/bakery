@@ -1,0 +1,40 @@
+{
+  "name": "bakery",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Вёрстка макета bakery",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexxandraQuant/bakery.git"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.7.2",
+    "browser-sync": "^2.18.7",
+    "css-mqpacker": "^5.0.1",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-csso": "^2.0.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-svgmin": "^1.2.3",
+    "gulp-svgstore": "^6.1.0",
+    "node-normalize-scss": "^1.4.0",
+    "run-sequence": "^1.2.2"
+  },
+  "scripts": {
+    "test": "editorconfig-cli",
+    "build": "gulp build",
+    "start": "npm run build && gulp serve"
+  },
+  "bugs": {
+    "url": "https://github.com/AlexxandraQuant/bakery/issues"
+  },
+  "homepage": "https://github.com/AlexxandraQuant/bakery#readme",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "author": "Alexandra Quant",
+  "license": "ISC"
+}
