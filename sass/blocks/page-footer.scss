@@ -1,0 +1,5 @@
+.page-footer__wrapper {
+	@include container;
+	display: flex;
+	justify-content: center;
+}

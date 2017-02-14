@@ -1,0 +1,35 @@
+.promo {
+	background: url("../img/bread-header.jpg") no-repeat center;
+
+	height: 900px;
+
+	margin-top: -70px;
+	outline: 1px solid orange;
+}
+
+.promo__wrapper {
+	@include container();
+	text-align: center;
+
+	padding-top: 300px;
+}
+
+.promo__title {
+	@include playfair;
+	font-weight: bold;
+	@include font-parameter(92px, 24px);
+	letter-spacing: 0.075em;
+	color: $white;
+
+	margin-bottom: 100px;
+}
+
+.promo__slogan {
+	@include proxima;
+	@include font-parameter(24px, 36px);
+	color: $white;
+	letter-spacing: 0.1em;
+
+	margin-bottom: 50px;
+
+}

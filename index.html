@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Gustoso Bakery</title>
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 	<header class="page-header">
@@ -13,15 +13,17 @@
 			<div class="page-header__top-wrapper">
 
 				<div class="page-header__logo">
-					<img src="#" alt="Gustoso">
+					<img src="img/header-logo.png" alt="Gustoso" width="140" height="44">
 				</div>
 				
 				<nav class="main-nav">
-					<div class="main-nav__item">Welcome</div>
-					<div class="main-nav__item">Menu</div>
-					<div class="main-nav__item">Reservations</div>
-					<div class="main-nav__item">News</div>
-					<div class="main-nav__item">Contact</div>
+					<ul class="main-nav__items">
+						<li class="main-nav__item"><a href="#">Welcome</a></li>
+						<li class="main-nav__item"><a href="#">Menu</a></li>
+						<li class="main-nav__item"><a href="#">Reservations</a></li>
+						<li class="main-nav__item"><a href="#">News</a></li>
+						<li class="main-nav__item"><a href="#">Contact</a></li>
+					</ul>
 				</nav>
 				
 				<div class="social-links__wrapper">
@@ -73,7 +75,7 @@
 					<span class="about__author-name  about__author-name--firstname">Benito</span>
 			
 					<div class="about__avatar">
-						<img src="#ava" alt="Benito Gaspare">
+						<img src="img/chef-cook.png" alt="Benito Gaspare">
 					</div>
 			
 					<span class="about__author-name  about__author-name--lastname">Gaspare</span>
@@ -84,19 +86,19 @@
 			
 			<div class="about__gallery">
 				<div class="about__gallery-item">
-					<img src="#" alt="">
+					<img src="img/flour.jpg" alt="Flour">
 				</div>
 			
 				<div class="about__gallery-item">
-					<img src="#" alt="">
+					<img src="img/egg.jpg" alt="Eggs and bread">
 				</div>
 			
 				<div class="about__gallery-item">
-					<img src="#" alt="">
+					<img src="img/chocko-cake.jpg" alt="Chockolate cake">
 				</div>
 			
 				<div class="about__gallery-item">
-					<img src="#" alt="">
+					<img src="img/strawberry-cake.jpg" alt="Cake with strawberry">
 				</div>
 			
 				<div class="about__ribbon"></div>
@@ -118,7 +120,7 @@
 					</div>
 			
 					<div class="recipe__photo">
-						<img src="#" alt="Pancakes">
+						<img src="img/pancakes.png" alt="Pancakes">
 					</div>
 					
 					<h2 class="recipe__title">Tasty pancakes</h2>
@@ -169,17 +171,17 @@
 			
 			<div class="article">
 				<div class="article__header">
-					<span class="article__data  article__data--left">EST.</span>
-					<span class="article__data  article__data--right">1893</span>
+					<span class="article__date  article__date--left">EST.</span>
+					<span class="article__date  article__date--right">1893</span>
 				</div>
 			
 				<h2 class="article__title">Your morning Escape with Flair</h2>
 			
-				<p>Donec vitae sapien ut libero venenatis faucibus. 
+				<p class="article__paragraph">Donec vitae sapien ut libero venenatis faucibus. 
 					Nullam quis ante. Etiam sit amet orci eget eros
 					faucibus tincidunt. Duis leo.</p>
 			
-				<a href="#" class="btn btn--solid">READ</a>
+				<a href="#" class="btn btn--solid btn--light-brown">READ</a>
 			</div>
 
 		</div>
@@ -193,19 +195,19 @@
 			<div class="ingredients__wrapper">
 				<ul class="ingredients">
 					<li class="ingredients__item">
-						<img src="#" alt="">
+						<img src="img/wheat-preview.png" alt="Wheat">
 						<h3 class="ingredients__item-title">Class aptent</h3>
 						<p class="ingredients__descript">Quot alienum persecuti ut eam, nam ad atqui primis nusquam.</p>
 					</li>
 
 					<li class="ingredients__item">
-						<img src="#" alt="">
+						<img src="img/eggs-preview.png" alt="Eggs">
 						<h3 class="ingredients__item-title">Nulla eget</h3>
 						<p class="ingredients__descript">Nullam dictum felis eu pede mollis pretium Integer tincidunt.</p>
 					</li>
 
 					<li class="ingredients__item">
-						<img src="#" alt="">
+						<img src="img/cheese-preview.png" alt="Cheese">
 						<h3 class="ingredients__item-title">Sed nibh purus</h3>
 						<p class="ingredients__descript"> Aenean eleifend tellus leo ligula, porttitor eu, consequat vitae.</p>
 					</li>
@@ -215,10 +217,10 @@
 
 			<div class="sandwich-recipe__info">
 				<div class="sandwich-recipe__photo">
-					<img src="#" alt="">
+					<img src="img/sandwich.png" alt="">
 				</div>
 
-				<a href="#" class="btn  btn-dashed"></a>
+				<a href="#" class="btn  btn--dashed btn--nude">Full recipe</a>
 
 				<div class="sandwich-recipe__tips">
 					<div class="tip">
@@ -249,7 +251,7 @@
 			</div>
 			
 			<div class="page-footer__logo">
-				<img src="#" alt="Gustoso">
+				<img src="img/footer-logo.png" alt="Gustoso">
 			</div>
 			
 			<div class="footer-nav  footer-nav--right">

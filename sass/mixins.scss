@@ -1,5 +1,31 @@
-@mixin container() {
+@mixin container {
 	width: 1260px;
 	
 	margin: auto;
+}
+
+@mixin resize($width, $height) {
+	width: $width;
+	height: $height;
+}
+
+@mixin font-parameter($size, $height) {
+	font-size: $size;
+	line-height: $height;
+}
+
+@mixin alegreya {
+	font-family: "Alegreya", "Times New Roman", serif;
+}
+
+@mixin scriptina {
+	font-family: "Scriptina", cursive;
+}
+
+@mixin proxima {
+	font-family: "Proxima Nova", "Arial", sans-serif;
+}
+
+@mixin playfair {
+	font-family: "Playfair Display", "Times New Roman", serif;
 }

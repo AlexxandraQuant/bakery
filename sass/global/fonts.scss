@@ -1,0 +1,42 @@
+@font-face {
+	font-family: "Alegreya";
+	src: local("Alegreya"),
+				url("../fonts/alegreya-regular-webfont.woff") format("woff"),
+				url("../fonts/alegreya-regular-webfont.woff2") format("woff2");				
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Alegreya";
+	src: local("Alegreya"),
+				url("../fonts/alegreya-bold-webfont.woff") format("woff"),
+				url("../fonts/alegreya-bold-webfont.woff2") format("woff2");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Proxima Nova";
+	src: local("Proxima Nova"),
+				url("../fonts/ProximaNova-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Playfair Display";
+	src: local("Playfair Display"),
+	url("../fonts/PlayfairDisplayBold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Scriptina";
+	src: local("Scriptina"),
+	url("../fonts/scriptin-webfont.woff") format("woff"),
+	url("../fonts/scriptin-webfont.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}

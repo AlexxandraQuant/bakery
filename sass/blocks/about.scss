@@ -1,0 +1,61 @@
+.about {
+	width: 100%;
+
+	background-color: $white;	
+	
+	min-height: 760px;
+	color: $brown;
+}
+
+.about__wrapper {
+	@include container;
+	display: flex;
+}
+
+.about__quote {
+	width: 50%;
+	text-align: center;
+}
+
+.about__title {
+	color: $brown;
+}
+
+.about__subtitle {
+	@include alegreya;
+	color: $light-brown;
+	text-transform: uppercase;
+	@include font-parameter(14px, 30px);
+	letter-spacing: 0.1em;
+	font-weight: bold;
+}
+
+.about__paragraph {
+	@include proxima;
+	@include font-parameter(14px, 24px);
+	letter-spacing: 0.1em;
+}
+
+.about__work-position {
+	@include alegreya;
+	@include font-parameter(24px, 30px);
+	font-style: normal;
+	font-weight: bold;
+}
+
+.about__author-name {
+	@include alegreya;
+	@include font-parameter(24px, 30px);
+	letter-spacing: 0.025em;
+}
+
+.about__slogan {
+	@include scriptina;
+	color: $light-brown;
+	@include font-parameter(24px, 30px);
+	letter-spacing: 0.025em;
+}
+
+.about__gallery {
+	width: 50%;
+}

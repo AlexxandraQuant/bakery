@@ -1,1 +1,12 @@
-.ingredients
+.ingredients {}
+
+.ingredients__item-title {
+	@include font-parameter(30px, 30px);
+	color: $light-brown;
+	letter-spacing: 0.025em;
+}
+
+.ingredients__descript {
+	@include font-parameter(14px, 20px);
+	letter-spacing: 0.1em;
+}

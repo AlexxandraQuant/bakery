@@ -58,15 +58,14 @@ gulp.task("symbols", function() {
 	.pipe(gulp.dest("img"));
 });
 
+gulp.task('build', function(fn) {
+  run('style', 'symbols',  fn);
+});
+
 gulp.task("serve", function() {
 	server.init({
 		server: "."
 	});
 	gulp.watch("sass/**/*.scss", ["style"])
-	gulp.watch("*.html")
-	.on("change", server.reload);
-});
-
-gulp.task('build', function(fn) {
-	run('style', 'symbols',  fn);
+	gulp.watch("*.html").on("change", server.reload);
 });

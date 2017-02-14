@@ -3,9 +3,6 @@
 @import "mixins.scss";
 @import "variables.scss";
 
-@import "global/fonts.scss";
-@import "global/general.scss";
-
 @import "blocks/about.scss";
 @import "blocks/article.scss";
 @import "blocks/btn.scss";
@@ -15,10 +12,13 @@
 @import "blocks/menu.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/page-header.scss";
-@import "blocks/promo.scss";
 @import "blocks/recipe.scss";
 @import "blocks/recipes.scss";
+@import "blocks/promo.scss";
 @import "blocks/sandwich-recipe.scss";
 @import "blocks/slider.scss";
 @import "blocks/social-links.scss";
 @import "blocks/tip.scss";
+
+@import "global/general.scss";
+@import "global/fonts.scss";

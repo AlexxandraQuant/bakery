@@ -1,0 +1,18 @@
+.recipe {
+
+}
+
+.recipe__subtitle {
+	@include alegreya;
+	color: $light-brown;
+	text-transform: uppercase;
+	@include font-parameter(14px, 30px);
+	letter-spacing: 0.1em;
+	font-weight: bold;	
+}
+
+.recipe__paragraph {
+	@include proxima;
+	@include font-parameter(14px, 24px);
+	letter-spacing: 0.1em;
+}

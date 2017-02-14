@@ -1,0 +1,21 @@
+.sandwich-recipe {
+
+}
+
+.sandwich-recipe__wrapper {
+	@include container;
+}
+
+.sandwich-recipe__title {
+	@include font-parameter(48px, 30px);
+
+}
+
+.sandwich-recipe__subtitle {
+	@include alegreya;
+	color: $light-brown;
+	text-transform: uppercase;
+	@include font-parameter(14px, 30px);
+	letter-spacing: 0.1em;
+	font-weight: bold;
+}

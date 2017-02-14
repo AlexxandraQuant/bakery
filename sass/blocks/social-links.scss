@@ -1,0 +1,21 @@
+.social-links {
+	font-size: 0;
+}
+
+.social-links__item {
+	@include resize(20px, 20px);
+	display: inline-block;
+	vertical-align: top;
+
+	&--tw {
+		background: url("../img/tw.svg") no-repeat center;
+	}
+
+	&--fb {
+		background: url("../img/fb.svg") no-repeat center;
+	}
+
+	&--inst {
+		background: url("../img/insta.svg") no-repeat center;
+	}
+}

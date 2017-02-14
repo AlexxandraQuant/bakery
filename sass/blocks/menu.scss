@@ -1,0 +1,46 @@
+.menu {
+	background: url("../img/menu-background-flour-spoon.jpg") no-repeat center;
+
+	min-height: 760px;
+	width: 100%;
+
+	box-sizing: border-box;
+
+	color: $white;
+	letter-spacing: 0.05em;
+}
+
+.menu__wrapper {
+	@include container;
+	display: flex;
+}
+
+.menu__list {
+	width: 50%;
+	text-align: center;
+}
+
+.menu__subtitle {
+	@include alegreya;
+	color: $pink-nude;
+	text-transform: uppercase;
+	@include font-parameter(14px, 30px);
+	font-weight: bold;
+}
+
+.menu__item-title {
+	color: $white;
+	@include font-parameter(30px, 30px);
+}
+
+.menu__item-descript {
+	@include proxima;
+	@include font-parameter(16px, 30px);
+	color: $gray;
+}
+
+.menu__item-price {
+	@include alegreya;
+	@include font-parameter(36px, 30px);
+	color: $nude;
+}

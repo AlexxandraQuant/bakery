@@ -1,0 +1,10 @@
+.recipes {	
+	background: url("../img/menu-background-milk-flour-wheat.jpg") no-repeat center;	
+
+	width: 100%;
+	min-height: 760px;
+}
+
+.recipes__wrapper {
+	@include container;
+}

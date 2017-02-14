@@ -1,0 +1,10 @@
+.footer-nav__items {
+	display: flex;
+}
+
+.footer-nav__item {
+	@include alegreya;
+	@include font-parameter(14px, 24px);
+	letter-spacing: 0.3em;
+	text-transform: uppercase;
+}

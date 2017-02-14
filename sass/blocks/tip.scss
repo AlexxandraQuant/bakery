@@ -1,0 +1,22 @@
+.tip {
+	@include alegreya;
+	font-weight: bold;
+	color: $light-brown;
+	letter-spacing: 0.1em;
+	text-align: center;
+}
+
+.tip__header {
+	@include font-parameter(18px, 30px);
+	text-transform: uppercase;
+}
+
+.tip__minute {
+	display: block;
+
+	@include font-parameter(92px, 30px);
+	color: $nude;
+
+	margin-bottom: 20px;
+}
+
