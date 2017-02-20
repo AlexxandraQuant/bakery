@@ -2,6 +2,7 @@
 	width: 1260px;
 	
 	margin: auto;
+	// outline: 1px solid orange;
 }
 
 @mixin resize($width, $height) {
@@ -12,6 +13,16 @@
 @mixin font-parameter($size, $height) {
 	font-size: $size;
 	line-height: $height;
+}
+
+@mixin pseudo($width, $height, $top, $left) {
+	content: "";
+	display: block;
+	position: absolute;
+	width: $width;
+	height: $height;
+	top: $top;
+	left: $left;
 }
 
 @mixin alegreya {
