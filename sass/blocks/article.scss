@@ -1,4 +1,7 @@
 .article {
+	@include resize(440px, 600px);
+
+	background: url("../img/menu-article-bg.png");
 	color: $brown;
 }
 
