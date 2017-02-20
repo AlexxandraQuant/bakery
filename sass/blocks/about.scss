@@ -10,30 +10,41 @@
 .about__wrapper {
 	@include container;
 	display: flex;
+
+	padding-top: 94px;
+	padding-left: 25px;
 }
 
 .about__quote {
-	width: 50%;
+	width: 42%;
 	text-align: center;
 }
 
 .about__title {
 	color: $brown;
+
+	margin-bottom: 11px;
 }
 
 .about__subtitle {
+	display: block;
+
 	@include alegreya;
 	color: $light-brown;
 	text-transform: uppercase;
 	@include font-parameter(14px, 30px);
 	letter-spacing: 0.1em;
 	font-weight: bold;
+
+	margin-bottom: 53px;
 }
 
 .about__paragraph {
 	@include proxima;
 	@include font-parameter(14px, 24px);
 	letter-spacing: 0.1em;
+
+	margin-bottom: 35px;
 }
 
 .about__work-position {
@@ -41,12 +52,32 @@
 	@include font-parameter(24px, 30px);
 	font-style: normal;
 	font-weight: bold;
+	letter-spacing: 0.025em;
+}
+
+.about__author {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.about__avatar {
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
 .about__author-name {
 	@include alegreya;
 	@include font-parameter(24px, 30px);
 	letter-spacing: 0.025em;
+
+	border-top: 1px solid $border-beige;
+	border-bottom: 1px solid $border-beige;
+	box-sizing: border-box;
+
+	@include resize(111px, 58px);
+
+	padding-top: 12px;
 }
 
 .about__slogan {
@@ -54,8 +85,90 @@
 	color: $light-brown;
 	@include font-parameter(24px, 30px);
 	letter-spacing: 0.025em;
+
+	width: 250px;
+
+	margin: auto;
+
+	position: relative;
+
+	&::before,
+	&::after {
+		content: '”';
+		display: block;
+
+		position: absolute;
+
+		width: 20px;
+		height: 20px;
+
+		font-family: "Times New Roman", serif;
+		@include font-parameter(60px, 30px);
+		letter-spacing: 0.025em;
+		color: $font-gray;
+	}
+
+	&::before {
+		left: -30px;
+
+		transform: rotate(180deg);
+	}
+
+	&::after {
+		right: -30px;
+
+		transform: scaleY(-1);
+	}
 }
 
 .about__gallery {
+	display: flex;
+	flex-wrap: wrap;
+
 	width: 50%;
+
+	position: relative;
+
+	&::before,
+	&::after {
+		display: block;
+
+		position: absolute;
+	}
+
+	&::before {
+		content: "";
+		@include resize(279px, 279px);
+
+		background: url("../img/lace.png") no-repeat center;
+
+		top: 135px;
+		left: 165px;
+	}
+
+	&::after {
+		content: "Tastes so good!";
+		width: 174px;
+
+		@include alegreya;
+		@include font-parameter(30px, 36px);
+		letter-spacing: 0.05em;
+		color: $golden;
+		text-transform: uppercase;
+		text-align: center;
+
+		top: 180px;
+		left: 180px;
+	}
 }
+
+.about__gallery-item {
+	margin-bottom: 20px;
+	outline: 5px solid $white;
+	outline-offset: -11px;
+	&:nth-child(2n-1) {
+		margin-right: 20px;
+	}
+}
+
+

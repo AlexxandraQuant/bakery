@@ -4,11 +4,29 @@
 	color: $light-brown;
 	letter-spacing: 0.1em;
 	text-align: center;
+
+	box-sizing: border-box;
+
+	@include resize(200px, 200px);
+	background: url("../img/cloudly-field.jpg") no-repeat center $bg-white;
+
+	padding-top: 30px;
+
+	position: absolute;
+
+	&--top-right {
+		right: 100px;
+		top: -50px;
+	}
 }
 
 .tip__header {
 	@include font-parameter(18px, 30px);
 	text-transform: uppercase;
+
+	display: block;
+
+	margin-bottom: 20px;
 }
 
 .tip__minute {
@@ -17,6 +35,6 @@
 	@include font-parameter(92px, 30px);
 	color: $nude;
 
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 

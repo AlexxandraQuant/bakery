@@ -13,6 +13,8 @@
 .menu__wrapper {
 	@include container;
 	display: flex;
+	
+	padding-top: 100px;
 }
 
 .menu__list {

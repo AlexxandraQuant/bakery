@@ -1,11 +1,17 @@
+.social-links__wrapper {
+	margin-left: auto;
+}
+
 .social-links {
 	font-size: 0;
 }
 
 .social-links__item {
-	@include resize(20px, 20px);
+	@include resize(14px, 16px);
 	display: inline-block;
 	vertical-align: top;
+
+	margin-right: 26px;
 
 	&--tw {
 		background: url("../img/tw.svg") no-repeat center;
@@ -17,5 +23,9 @@
 
 	&--inst {
 		background: url("../img/insta.svg") no-repeat center;
+	}
+
+	&:last-child {
+		margin-right: 0;
 	}
 }

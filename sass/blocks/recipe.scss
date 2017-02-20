@@ -1,5 +1,15 @@
 .recipe {
+	display: flex;
+	justify-content: center;
+	
+	position: relative;
+}
 
+.recipe__body {
+	@include resize(545px, 513px);
+	background-color: $bg-white;
+
+	margin-left: -50px;
 }
 
 .recipe__subtitle {
