@@ -1,9 +1,28 @@
-.ingredients {}
+.ingredients__wrapper {
+	width: 310px;
+}
+
+.ingredients {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 600px;
+}
 
 .ingredients__item-title {
 	@include font-parameter(30px, 30px);
 	color: $light-brown;
 	letter-spacing: 0.025em;
+
+	text-align: center;
+}
+
+.ingredients__item {
+	height: 170px;
+}
+
+.ingredients__item img {
+	margin: auto;
 }
 
 .ingredients__descript {

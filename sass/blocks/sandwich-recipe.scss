@@ -1,9 +1,7 @@
-.sandwich-recipe {
-
-}
-
 .sandwich-recipe__wrapper {
 	@include container;
+
+	text-align: center;
 }
 
 .sandwich-recipe__title {
@@ -18,4 +16,9 @@
 	@include font-parameter(14px, 30px);
 	letter-spacing: 0.1em;
 	font-weight: bold;
+}
+
+.sandwich-recipe__card {
+	display: flex;
+	justify-content: space-between;
 }
