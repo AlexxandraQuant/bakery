@@ -1,5 +1,8 @@
 .ingredients__wrapper {
-	width: 310px;
+	width: 303px;
+
+	position: relative;
+	top: -13px;
 }
 
 .ingredients {
@@ -19,10 +22,25 @@
 
 .ingredients__item {
 	height: 170px;
+
+	margin-bottom: 96px;
 }
 
-.ingredients__item img {
+.ingredients__photo {
+	@include resize(100px, 100px);
 	margin: auto;
+
+	margin-bottom: 21px;
+}
+
+.ingredients__item-title {
+	margin-bottom: 19px;
+}
+
+.ingredients__photo,
+.ingredients__item-title {
+	position: relative;
+	left: -6px;
 }
 
 .ingredients__descript {

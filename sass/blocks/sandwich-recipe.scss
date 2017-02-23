@@ -1,11 +1,31 @@
+.sandwich-recipe {
+	background-color: $cream;
+}
+
 .sandwich-recipe__wrapper {
 	@include container;
+
+	min-height: 870px;
+
+	padding-top: 105px;
 
 	text-align: center;
 }
 
 .sandwich-recipe__title {
 	@include font-parameter(48px, 30px);
+
+	margin-bottom: 11px;
+
+	position: relative;
+
+	&::before {
+		@include pseudo(707px, 142px, -105px, 50%);
+
+		background: url("../img/wide-field.png");
+
+		margin-left: -353.5px;
+	}
 
 }
 
@@ -21,4 +41,20 @@
 .sandwich-recipe__card {
 	display: flex;
 	justify-content: space-between;
+}
+
+.sandwich-recipe__info {
+	margin-top: 79px;
+
+	position: relative;
+}
+
+.sandwich-recipe__tips {
+	position: absolute;
+	top: -24px;
+	right: 10px;
+}
+
+.sandwich-recipe__photo {
+	box-shadow: -1px 6px 30px 0 fade-out(#000000, 0.9);
 }

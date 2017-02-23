@@ -1,12 +1,33 @@
 .article {
 	@include resize(440px, 600px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+
+	box-sizing: border-box;
+
+	padding-right: 50px;
+	padding-left: 50px;
 
 	background: url("../img/article-bg.png");
 
 	color: $brown;
 }
 
+.article__header {
+	display: flex;
+	justify-content: space-between;
+
+	width: 68%;
+
+	margin-top: 44px;
+	margin-bottom: 127px;
+}
+
 .article__date {
+	display: block;
+
 	@include alegreya;
 	@include font-parameter(14px, 30px);
 	text-transform: uppercase;
@@ -16,9 +37,13 @@
 .article__title {
 	@include font-parameter(44px, 60px);
 	letter-spacing: 0.025em;
+
+	margin-bottom: 29px;
 }
 
 .article__paragraph {
 	@include proxima;
 	@include font-parameter(14px, 30px);
+
+	margin-bottom: 44px;
 }

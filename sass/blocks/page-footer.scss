@@ -1,5 +1,20 @@
+.page-footer {
+	background-color: $cream;
+	height: 185px;
+}
+
 .page-footer__wrapper {
 	@include container;
 	display: flex;
 	justify-content: center;
+
+	padding-top: 44px;
+	padding-right: 5px;
+}
+
+.page-footer__logo {
+	margin-top: 25px;
+
+	margin-right: 45px;
+	margin-left: 45px;
 }

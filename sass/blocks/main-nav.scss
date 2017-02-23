@@ -22,7 +22,7 @@
 
 	margin-right: 82px;
 
-	&:after {
+	&::after {
 		content: "~";
 		display: block;
 
@@ -38,7 +38,7 @@
 		margin-right: 0;
 	}
 
-	&:last-child:after {
+	&:last-child::after {
 		display: none;
 	}
 }

@@ -1,5 +1,16 @@
 .footer-nav__items {
 	display: flex;
+
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+
+	height: 69px;
+}
+
+.footer-nav__items {
+	&--right {
+		padding-left: 10px;
+	}
 }
 
 .footer-nav__item {
@@ -7,4 +18,39 @@
 	@include font-parameter(14px, 24px);
 	letter-spacing: 0.3em;
 	text-transform: uppercase;
+
+	margin-right: 45px;
+	margin-left: 37px;
+
+	position: relative;
+
+	padding-top: 23px;
+
+	&:first-child {
+		margin-left: 37px;
+	}
+
+	&:last-child {
+		margin-right: 34px;
+	}
+
+	&::after {
+		content: "~";
+		display: block;
+
+		position: absolute;
+		top: 23px;
+		right: -43px;
+
+		width: 8px;
+		height: 2px;
+	}
+
+	&:last-child::after {
+		display: none;
+	}
+
+	&--long-marg {
+		// margin-left: 45px;
+	}
 }

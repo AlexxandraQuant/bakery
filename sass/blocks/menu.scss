@@ -13,32 +13,56 @@
 .menu__wrapper {
 	@include container;
 	display: flex;
+	justify-content: space-between;
 	
-	padding-top: 100px;
+	padding-top: 89px;
+}
+
+.menu__title {
+	@include font-parameter(60px, 30px);
+	letter-spacing: 0.05em;
+
+	margin-bottom: 13px;
+	margin-top: 11px;
 }
 
 .menu__list {
 	width: 50%;
 	text-align: center;
+
+	padding-left: 44px;
 }
 
 .menu__subtitle {
 	@include alegreya;
 	color: $pink-nude;
 	text-transform: uppercase;
-	@include font-parameter(14px, 30px);
+	@include font-parameter(18px, 30px);
 	font-weight: bold;
+	letter-spacing: 0.05em;
+}
+
+.menu__items {
+	margin-top: 57px;
+}
+
+.menu__item {
+	margin-bottom: 52px;
 }
 
 .menu__item-title {
 	color: $white;
 	@include font-parameter(30px, 30px);
+
+	margin-bottom: 4px;
 }
 
 .menu__item-descript {
 	@include proxima;
 	@include font-parameter(16px, 30px);
 	color: $gray;
+
+	margin-bottom: 17px;
 }
 
 .menu__item-price {

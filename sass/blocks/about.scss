@@ -53,17 +53,23 @@
 	font-style: normal;
 	font-weight: bold;
 	letter-spacing: 0.025em;
+
+	margin-bottom: 42px;
+
+	display: block;
 }
 
 .about__author {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	margin-bottom: 38px;
 }
 
 .about__avatar {
-	margin-left: 20px;
-	margin-right: 20px;
+	margin-left: 25px;
+	margin-right: 25px;
 }
 
 .about__author-name {
@@ -75,9 +81,9 @@
 	border-bottom: 1px solid $border-beige;
 	box-sizing: border-box;
 
-	@include resize(111px, 58px);
+	@include resize(111px, 60px);
 
-	padding-top: 12px;
+	padding-top: 15px;
 }
 
 .about__slogan {
@@ -91,6 +97,7 @@
 	margin: auto;
 
 	position: relative;
+	left: -1px;
 
 	&::before,
 	&::after {
@@ -109,13 +116,15 @@
 	}
 
 	&::before {
-		left: -30px;
+		left: -74px;
+		top: -26px;
 
 		transform: rotate(180deg);
 	}
 
 	&::after {
-		right: -30px;
+		right: -74px;
+		bottom: -15px;
 
 		transform: scaleY(-1);
 	}
@@ -129,6 +138,9 @@
 
 	position: relative;
 
+	margin-top: 26px;
+	margin-left: 20px;
+
 	&::before,
 	&::after {
 		display: block;
@@ -141,6 +153,8 @@
 		@include resize(279px, 279px);
 
 		background: url("../img/lace.png") no-repeat center;
+		background-blend-mode: soft-light;
+		opacity: 0.97;
 
 		top: 135px;
 		left: 165px;
@@ -157,8 +171,8 @@
 		text-transform: uppercase;
 		text-align: center;
 
-		top: 180px;
-		left: 180px;
+		top: 225px;
+		left: 223px;
 	}
 }
 

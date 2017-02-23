@@ -1,15 +1,27 @@
 .recipe {
 	display: flex;
-	justify-content: center;
 	
 	position: relative;
+}
+
+.recipe__photo {
+	margin-left: 95px;
 }
 
 .recipe__body {
 	@include resize(545px, 513px);
 	background-color: $bg-white;
 
-	margin-left: -50px;
+	margin-left: -166px;
+	padding-top: 85px;
+	padding-left: 63px;
+	padding-right: 63px;
+
+	box-sizing: border-box;
+}
+
+.recipe__title {
+	margin-bottom: 11px;
 }
 
 .recipe__subtitle {
@@ -18,7 +30,11 @@
 	text-transform: uppercase;
 	@include font-parameter(14px, 30px);
 	letter-spacing: 0.1em;
-	font-weight: bold;	
+	font-weight: bold;
+
+	display: block;
+
+	margin-bottom: 53px;
 }
 
 .recipe__paragraph {
