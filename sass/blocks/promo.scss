@@ -4,14 +4,18 @@
 
 	margin-top: -70px;
 	// outline: 1px solid orange;
-
-	height: 900px;
 }
 
 .promo__wrapper {
 	@include container();
 
 	padding-top: 302px;
+
+	box-sizing: border-box;	
+
+	height: 900px;
+
+	position: relative;
 }
 
 .promo__title {
@@ -54,4 +58,32 @@
 .promo__title,
 .promo__slogan {
 	padding-left: 5px;
+}
+
+.promo__ribbon {
+	position: absolute;
+
+	@include resize(80px, 80px);
+
+	background-color: $bg-white;
+
+	border-radius: 50%;
+
+	bottom: -45px;
+	left: 50%;
+	margin-left: -40px;
+
+	&::before {
+		@include pseudo(80px, 80px, -1px, 50%);
+		background: url("../img/bread-ribbon.png") no-repeat center;
+
+		margin-left: -40px;
+	}
+
+	&::after {
+		@include pseudo(106px, 106px, -14px, 39px);
+		background: url("../img/frill-border.png") no-repeat center;
+
+		margin-left: -53px;
+	}
 }
