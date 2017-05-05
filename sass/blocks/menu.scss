@@ -48,6 +48,15 @@
 
 .menu__item {
 	margin-bottom: 52px;
+
+	position: relative;
+
+	&::before {
+		@include pseudo(90px, 27px, 126px, 50%);
+		background: url("../img/spritesheet.png") no-repeat -602px -5px;
+
+		margin-left: -45px;
+	}
 }
 
 .menu__item-title {

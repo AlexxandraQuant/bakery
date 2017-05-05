@@ -13,16 +13,14 @@
 
 	margin-right: 26px;
 
-	&--tw {
-		background: url("../img/tw.svg") no-repeat center;
-	}
+	background: url("../img/spritesheet.png") no-repeat -577px -3px;
 
 	&--fb {
-		background: url("../img/fb.svg") no-repeat center;
+		background-position: -346px -4px;
 	}
 
 	&--inst {
-		background: url("../img/insta.svg") no-repeat center;
+		background-position: -552px -5px;
 	}
 
 	&:last-child {

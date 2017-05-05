@@ -10,9 +10,43 @@
 	padding-right: 50px;
 	padding-left: 50px;
 
-	background: url("../img/article-bg.png");
+	background: url("../img/article-bg.png") no-repeat center;
 
 	color: $brown;
+
+	position: absolute;
+
+	&--active {
+		position: relative;
+		z-index: 3;
+
+		&::before {
+			@include pseudo(346px, 220px, 450px, 263px);
+			background: url("../img/spritesheet.png") no-repeat -276px -121px;
+
+			opacity: 0.5;
+		}
+	}
+
+	&--middle {
+		z-index: 2;
+		top: 26px;
+		right: -13px;
+
+		@include resize(401px, 548px);
+	}
+
+	&--bottom {
+		z-index: 1;
+		top: 50px;
+		right: -25px;
+
+		@include resize(367px, 501px);
+	}
+}
+
+.article__wrapper {
+	position: relative;
 }
 
 .article__header {

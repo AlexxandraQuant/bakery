@@ -10,7 +10,7 @@
 
 .recipe__body {
 	@include resize(545px, 513px);
-	background-color: $bg-white;
+	background: url("../img/mill.png") no-repeat right bottom $bg-white;
 
 	margin-left: -166px;
 	padding-top: 85px;
